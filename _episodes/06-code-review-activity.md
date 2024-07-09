@@ -31,7 +31,7 @@ duplication in their cells.  These are all valuable and good practice of the
 method of critically reviewing other people's code.  However, here we will focus
 on the mechanics of providing feedback on a PR in github.
 
-## Code Review Activity
+## <img src="../images/activity.png" alt="Activity" width="80" height="80"> Code Review Activity
 We will be using the excellent practice materials from [code-review.org](code-review.org).
 
 1. [Setup the tutorial](https://code-review.org/docs/setup/setup/) on github.
