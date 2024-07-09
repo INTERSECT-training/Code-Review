@@ -36,6 +36,12 @@ Code review requires two complementary skills: the mechanical actions of perform
 the review through github (or another version control system) and the soft skills
 of providing feedback.
 
+<p style="text-align: center;">
+  <a href="https://www.example.com">
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2J2cHh5aG1pM3FpMjl6ZDF5M2RzeXFrazlxcnNycXl1OTJnNXZ5NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1oKVY32nKs1AA/giphy.gif" alt="Exciting GIF" width="150" height="150">
+  </a>
+</p>
+
 It can be helpful to draw a comparison between code review and editing a
 scientific paper. The mechanics of editing a paper may require learning how to
 record changes, add comments or adjust references.  What you say in those comments
