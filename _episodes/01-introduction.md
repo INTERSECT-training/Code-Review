@@ -40,7 +40,9 @@ program.  Such a recommendation could be easily considered during design but
 may be impractical prior to release (especially if the code isn't modular).
 Keep in mind where in the project life cycle a review takes place.
 
-<img src="../images/1.4.svg" width = "200"/>
+<img src="../images/1.4.svg" width = "1000"/>
+
+<img src="../images/1.5.svg" width = "200"/>
 
 ***Why*** a review happens can be for a variety of reasons.  Maybe they are a rubber stamp you
 have to do before anything is merged.  Maybe you really don't know the best
