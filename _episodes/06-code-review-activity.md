@@ -15,7 +15,7 @@ You don't have to perform code reviews in github, but they are nicely integrated
 and widely used so it is helpful to practice there.  Ideally, your project would
 develop in the following cycle:
 
-![Code Review in Github](../images/6.1.png)
+<img src="../images/6.0.svg" width = "1000"/>
 
 Obviously, life would be easy if this were always true.  If you are the only developer
 you would have to perform all these operations.  As you implement a feature,
