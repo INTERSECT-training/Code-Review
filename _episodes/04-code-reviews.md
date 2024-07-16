@@ -99,4 +99,7 @@ some refactoring to improve readability.  Open source software has to be approac
 to would-be contributors.  A non-expert reviewer can help identify places a
 general developer will have trouble following.
 
+<img src="../images/4.0.svg" width = "800"/>
+
+
 {% include links.md %}
