@@ -23,27 +23,27 @@ keypoints:
 
 # Collaborative Construction
 
-<img src="../images/1.0.svg" width = "200"/>
-
+### Who
 ***Who*** is performing the review and whose work is being reviewed determines the point of a review. If a senior member is reviewing a pull request from an intern, they may want to provide feedback on style or help the intern understand the larger software system. Conversely, an intern may share a new language feature they just learned in college that the senior developer hadn't known. Maybe a stakeholder is reviewing user stories to ensure the deliverable will satisfy their needs. The desired audience will affect how a review is performed, what kind of common language is available to a senior developer that a stakeholder may not understand?
 
-<img src="../images/1.1.svg" width = "200"/>  
-
+### What
 ***What*** is being reviewed can also change what the collaborative construction is called.
+When reviewing single lines of code as they are written, this is usually called
+pair programming.  Reviewing single PRs or commits is classified as code review.
+You can also review design documents in project planning. Checking test coverage
+may be called quality assurance and a final check of a repository prior to
+release is a repository review.
+<img src="../images/1.what.svg" width = "1000"/>
 
-<img src="../images/1.2.svg" width = "1000"/>
-<img src="../images/1.3.svg" width = "200"/>
-
+### When
 ***When*** a review takes place is tightly coupled to what is being reviewed, but not
 entirely.  Consider discussing a change to the underlying data structure in a
 program.  Such a recommendation could be easily considered during design but
 may be impractical prior to release (especially if the code isn't modular).
 Keep in mind where in the project life cycle a review takes place.
+<img src="../images/1.when.svg" width = "600"/>
 
-<img src="../images/1.4.svg" width = "1000"/>
-
-<img src="../images/1.5.svg" width = "200"/>
-
+### Why
 ***Why*** a review happens can be for a variety of reasons.  Maybe they are a rubber stamp you
 have to do before anything is merged.  Maybe you really don't know the best
 algorithm or library for an operation and want feedback from a colleague.  Or

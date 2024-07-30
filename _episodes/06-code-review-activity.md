@@ -14,8 +14,15 @@ keypoints:
 You don't have to perform code reviews in github, but they are nicely integrated
 and widely used so it is helpful to practice there.  Ideally, your project would
 develop in the following cycle:
-
-<img src="../images/6.0.svg" width = "1000"/>
+<img src="../images/6.git_workflow.svg" width = "1000"/>
+1. A user requests a feature or notices a bug.  They open an **issue**.  Each
+issue should contain a single problem or feature and be self contained.
+2. A developer works on the issue, implementing the feature or fixing the bug.
+The submit a **pull request** consisting of (possibly several) small commits.
+Commits should be atomic, e.g. can be selected and applied in any order.
+3. A maintainer or other developer **reviews** the pull request.  They should ensure
+the PR addresses the issue (and only the issue) while maintaining a high quality
+of code in the project.
 
 Obviously, life would be easy if this were always true.  If you are the only developer
 you would have to perform all these operations.  As you implement a feature,
