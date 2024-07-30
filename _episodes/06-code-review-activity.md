@@ -14,6 +14,7 @@ keypoints:
 You don't have to perform code reviews in github, but they are nicely integrated
 and widely used so it is helpful to practice there.  Ideally, your project would
 develop in the following cycle:
+<img src="../images/6.git_workflow.svg" width = "1000"/>
 1. A user requests a feature or notices a bug.  They open an **issue**.  Each
 issue should contain a single problem or feature and be self contained.
 2. A developer works on the issue, implementing the feature or fixing the bug.
@@ -37,7 +38,6 @@ duplication in their cells.  These are all valuable and good practice of the
 method of critically reviewing other people's code.  However, here we will focus
 on the mechanics of providing feedback on a PR in github.
 
-## Code Review Activity
 We will be using the excellent practice materials from [code-review.org](code-review.org).
 
 1. [Setup the tutorial](https://code-review.org/docs/setup/setup/) on github.

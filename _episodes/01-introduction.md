@@ -23,43 +23,28 @@ keypoints:
 
 # Collaborative Construction
 
-## Introduction
-Testing and debugging are not the best way to find software defects. 
-Their primary benefits are to quickly detect and prevent regressions.
-
-Collaborative construction techniques, such as design- and code-reviews are
-much better at finding defects. Collaborative development covers a range of
-topics and goals throughout a project life cycle.  We can try to classify over
-a range of dimensions:
-
 ### Who
-Who is performing the review and whose work is being reviewed determines the
-point of a review.  If a senior member is reviewing a pull request from an intern,
-they may want to provide feedback on style or help the intern understand the
-larger software system.  Conversely, an intern may share a new language feature
-they just learned in college that the senior developer hadn't known.  Maybe a
-stakeholder is reviewing user stories to ensure the deliverable will satisfy
-their needs.  The desired audience will affect how a review is performed, what
-kind of common language is available to a senior developer that a stakeholder
-may not understand?
+***Who*** is performing the review and whose work is being reviewed determines the point of a review. If a senior member is reviewing a pull request from an intern, they may want to provide feedback on style or help the intern understand the larger software system. Conversely, an intern may share a new language feature they just learned in college that the senior developer hadn't known. Maybe a stakeholder is reviewing user stories to ensure the deliverable will satisfy their needs. The desired audience will affect how a review is performed, what kind of common language is available to a senior developer that a stakeholder may not understand?
 
 ### What
-What is being reviewed can also change what the collaborative construction is called.
+***What*** is being reviewed can also change what the collaborative construction is called.
 When reviewing single lines of code as they are written, this is usually called
 pair programming.  Reviewing single PRs or commits is classified as code review.
 You can also review design documents in project planning. Checking test coverage
 may be called quality assurance and a final check of a repository prior to
 release is a repository review.
+<img src="../images/1.what.svg" width = "1000"/>
 
 ### When
-When a review takes place is tightly coupled to what is being reviewed, but not
+***When*** a review takes place is tightly coupled to what is being reviewed, but not
 entirely.  Consider discussing a change to the underlying data structure in a
 program.  Such a recommendation could be easily considered during design but
 may be impractical prior to release (especially if the code isn't modular).
 Keep in mind where in the project life cycle a review takes place.
+<img src="../images/1.when.svg" width = "600"/>
 
 ### Why
-Reviews can happen for a variety of reasons.  Maybe they are a rubber stamp you
+***Why*** a review happens can be for a variety of reasons.  Maybe they are a rubber stamp you
 have to do before anything is merged.  Maybe you really don't know the best
 algorithm or library for an operation and want feedback from a colleague.  Or
 perhaps you are a new contributor to a project and want to learn more about the
@@ -67,11 +52,11 @@ fundamental systems in place.  Usually code reviews take place to ensure changes
 to code are necessary and correct.  An hour spent by a separate developer can
 save days or weeks of time tracking down a new bug or failing test.  This is
 why large companies require reviews, but reviews can be beneficial to smaller
-teams that also contain novice developers.  Some other benefits include:
-- Reviewers can identify bugs that the developer may have overlooked
-- Reviewers can gauge how well the code satisfies requirements
-- Reviewers can suggest better designs, refactorings, or other improvements
-- Reviewers can verify that the code has sufficient test-automation
+teams that also contain novice developers.  Some other benefits for reviewers can include:
+- Identifying bugs that the developer may have overlooked
+- Gauging how well the code satisfies requirements
+- Suggesting better designs, refactorings, or other improvements
+- Verifying that the code has sufficient test-automation
 
 ### Pair Programming and Code Review
 With such a vast range of possible topics, we will focus here on Pair Programming

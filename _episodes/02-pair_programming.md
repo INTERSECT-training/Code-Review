@@ -46,6 +46,8 @@ This is typically because:
 > Originating from a story in the 1999 book, The Pragmatic Programmer, "rubber-ducking" is the act of describing code line-by-line to something, sentient or otherwise (a rubber duck in the original story), while debugging code.
 > While it may sound ridiculous, this phenomena has been found to increase the detection of bugs or unintended behavior. 
 > While pair-programming, the driver will explain the code line by line while substituting the rubber-duck for the navigator, experiencing a similar effect.
+> <img src="../images/2.duck.svg" width = "800"/>
+
 {: .callout}
 
 Assuming that pair programming is generally this effective, the time-savings in
@@ -131,6 +133,8 @@ Remember everybody makes mistakes!
 >   * Make sure they are documented!
 >   * Make sure they are enforced, through assertions, sanity-checks, etc.
 > * Give Drivers a chance to fix typos before immediately calling them out.  Typing with an audience can be difficult at first!
+> * <img src="../images/2.roles.svg" width = "800"/>
+
 {: .callout}
 
 
