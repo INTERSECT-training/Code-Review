@@ -2,23 +2,9 @@
 title: "Collaborative Construction Debrief"
 teaching: 0
 exercises: 0
+objectives:
+- "Review the exercises and discuss any challenges or opportunities you noticed"
 ---
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- None
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Review the exercises and discuss any challenges or opportunities you noticed
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-
 
 ## Code Review
 Code review adds a social aspect to the typically solitary work of development.
@@ -41,14 +27,5 @@ improve PRs prior to merging. Talking and sharing your expertise can be fun!
     * Did you find anything substantial? 
     * What hurdles do you still have in starting self or peer reviews in your work?
 
+{% include links.md %}
 
-
-
-
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- None
-
-::::::::::::::::::::::::::::::::::::::::::::::::

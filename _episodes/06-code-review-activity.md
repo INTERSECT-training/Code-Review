@@ -2,28 +2,19 @@
 title: "Code Review Activity"
 teaching: 0
 exercises: 0
+questions:
+- "What challenges and opportunities did you experience during the exercise?"
+objectives:
+- "Learn how to review code in github"
+keypoints:
+- "Strive to review PRs that solve a single issue."
 ---
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- What challenges and opportunities did you experience during the exercise?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Learn how to review code in github
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
 
 ## Code Review in Github
 You don't have to perform code reviews in github, but they are nicely integrated
 and widely used so it is helpful to practice there.  Ideally, your project would
 develop in the following cycle:
-![](fig/6.git_workflow.svg){alt='Git Workflow' width='1000px'}
+<img src="../images/6.git_workflow.svg" width = "1000"/>
 1. A user requests a feature or notices a bug.  They open an **issue**.  Each
 issue should contain a single problem or feature and be self contained.
 2. A developer works on the issue, implementing the feature or fixing the bug.
@@ -66,15 +57,5 @@ We will be using the excellent practice materials from [code-review.org](code-re
 7. (Optional) if you have time, review another PR from the tutorial repo,
    a PR from another participant, or a PR in a project you like.
 
+{% include links.md %}
 
-
-
-
-
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Strive to review PRs that solve a single issue.
-
-::::::::::::::::::::::::::::::::::::::::::::::::

@@ -2,25 +2,17 @@
 title: "Code Reviews"
 teaching: 0
 exercises: 0
----
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
+questions:
 - What are some benefits of formalized code reviews?
 - What is the difference between a code read-through and walk-through?
 - What is your biggest hurdle to starting code reviews?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Learn why code reviews are important.
 - Identify and address challenges when beginning code review.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
+keypoints:
+- Code review saves time, money and reduces error.  The more formal the review, the bigger the savings.
+- During a code walk-through, the author is present to discuss the changes.  A read-through does not require the author during the review.
+---
 
 ## Code Reviews
 **Code reviews**, or **peer (code) reviews** are a practice where someone other
@@ -107,14 +99,7 @@ some refactoring to improve readability.  Open source software has to be approac
 to would-be contributors.  A non-expert reviewer can help identify places a
 general developer will have trouble following.
 
-![](fig/4.faq.svg){alt='faq' width='800px'}
+<img src="../images/4.faq.svg" width = "800"/>
 
 
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Code review saves time, money and reduces error.  The more formal the review, the bigger the savings.
-- During a code walk-through, the author is present to discuss the changes.  A read-through does not require the author during the review.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+{% include links.md %}

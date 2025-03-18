@@ -2,23 +2,16 @@
 title: "Best Practices"
 teaching: 0
 exercises: 0
----
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
+questions:
 - How fast should you review code?
 - How do you decide what should be reviewed?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Learn about best practices in code review
-- Understand the importance of static analysis tools
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+objectives:
+- "Learn about best practices in code review"
+- "Understand the importance of static analysis tools"
+keypoints:
+- Review no faster than 500 lines per hour
+- Decide on a checklist for a project and use it during a review
+---
 
 ## Best Practices for Code Reviews
 In this episode, we will learn about the best practices of code-reviews regarding scope, goals, feedback, and tools.
@@ -46,19 +39,16 @@ In the absence of this, projects should include general code-review goals and gu
 If there is other background knowledge necessary for an effective code-review, provide it to the reviewers.
 This can be included or referenced in comments, provided in documentation, etc.
 
-::::::::::::::::::::::::::::::::::::: callout
-
-## A Checklist from Google
-[Google's engineering practices](https://google.github.io/eng-practices/review/)  recommend code reviews should look at: 
-* **Design**:  Is the code well-designed and appropriate for your system?
-* **Functionality**:  Does the code behave as the author likely intended? Is the way the code behaves good for its users?
-* **Tests**:  Does the code have correct and well-designed automated tests?
-* **Naming**:  Did developer choose clear names for variables, classes, methods, etc.?
-* **Comments**:  Are the comments clear and useful?
-* **Style**:  Does the code follow our style guides?
-* **Documentation**:  Did the developer also update relevant documentation?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+> ## A Checklist from Google
+> [Google's engineering practices](https://google.github.io/eng-practices/review/)  recommend code reviews should look at: 
+> * **Design**:  Is the code well-designed and appropriate for your system?
+> * **Functionality**:  Does the code behave as the author likely intended? Is the way the code behaves good for its users?
+> * **Tests**:  Does the code have correct and well-designed automated tests?
+> * **Naming**:  Did developer choose clear names for variables, classes, methods, etc.?
+> * **Comments**:  Are the comments clear and useful?
+> * **Style**:  Does the code follow our style guides?
+> * **Documentation**:  Did the developer also update relevant documentation?
+{: .callout}
 
 
 
@@ -84,14 +74,11 @@ loops, structuring functions, etc.  When providing feedback, indicate whether
 your feedback is about a serious issue (e.g. correctness, security, safety),
 versus merely you expressing an opinion or suggestion.
 
-::::::::::::::::::::::::::::::::::::: callout
-
-## A Solution for Nitpicks
-Several companies specify that review feedback should be prefixed with “Nit:  …” if you are merely being nitpicky.
-
-Reviewer opinions and nitpicks are free to be ignored by the author!
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+> ## A Solution for Nitpicks
+> Several companies specify that review feedback should be prefixed with “Nit:  …” if you are merely being nitpicky.
+> 
+> Reviewer opinions and nitpicks are free to be ignored by the author!
+{: .callout}
 
 
 ## Tools
@@ -109,45 +96,29 @@ Static analysis tools allow the review to focus on higher-level concerns - how
 the code works, how it benefits the project, higher-level structural/design
 issues, etc.
 
-::::::::::::::::::::::::::::::::::::: callout
+> ## Examples of Static Analysis Tools for Python
+> * [Flake8](https://flake8.pycqa.org/en/latest/) - coding style and linting
+> * [Pylint](https://pylint.org/) - coding style and linting
+> * [Black](https://black.readthedocs.io/en/stable/) - coding style enforcement
+> * [mypy](http://mypy-lang.org/) - check Python code against type annotations
+> * [ruff](https://docs.astral.sh/ruff/) - a fast linter and formatter
+{: .callout}
+{% include links.md %}
 
-## Examples of Static Analysis Tools for Python
-* [Flake8](https://flake8.pycqa.org/en/latest/) - coding style and linting
-* [Pylint](https://pylint.org/) - coding style and linting
-* [Black](https://black.readthedocs.io/en/stable/) - coding style enforcement
-* [mypy](http://mypy-lang.org/) - check Python code against type annotations
-* [ruff](https://docs.astral.sh/ruff/) - a fast linter and formatter
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-::::::::::::::::::::::::::::::::::::: callout
-
-## Additional Resources
-These three resources are incredibly valuable and should be read by everyone:
-* Google - [Code Review Developer Guide](https://google.github.io/eng-practices/review/)
-  * Very detailed guidelines for all participants of code reviews
-  * "How to do a code review document" is very good for mechanics of reviews
-* Palantir – [Code Review Best Practices](https://blog.palantir.com/code-review-best-practices-19e02780015f)
-  * An excellent and detailed guide about code reviews
-* StackOverflow - [How to Make Good Code Reviews Better](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/)
-
-These are also excellent articles:
-* Atlassian – [Why code reviews matter (and actually save time!)](https://www.atlassian.com/agile/software-development/code-reviews)
-  * Discusses code reviews in the context of agile development methodologies
-* Perforce – [9 Best Practices for Code Reviews](https://www.perforce.com/blog/qac/9-best-practices-for-code-review)
-* [code-review.org](code-review.org)
-  * A thorough tutorial on how to perform code reviews in github
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Review no faster than 500 lines per hour
-- Decide on a checklist for a project and use it during a review
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+> ## Additional Resources
+> These three resources are incredibly valuable and should be read by everyone:
+> * Google - [Code Review Developer Guide](https://google.github.io/eng-practices/review/)
+>   * Very detailed guidelines for all participants of code reviews
+>   * "How to do a code review document" is very good for mechanics of reviews
+> * Palantir – [Code Review Best Practices](https://blog.palantir.com/code-review-best-practices-19e02780015f)
+>   * An excellent and detailed guide about code reviews
+> * StackOverflow - [How to Make Good Code Reviews Better](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/)
+>
+> These are also excellent articles:
+> * Atlassian – [Why code reviews matter (and actually save time!)](https://www.atlassian.com/agile/software-development/code-reviews)
+>   * Discusses code reviews in the context of agile development methodologies
+> * Perforce – [9 Best Practices for Code Reviews](https://www.perforce.com/blog/qac/9-best-practices-for-code-review)
+> * [code-review.org](code-review.org)
+>   * A thorough tutorial on how to perform code reviews in github
+{: .callout}
+{% include links.md %}

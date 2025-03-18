@@ -2,24 +2,14 @@
 title: "Pair Programming Activity"
 teaching: 0
 exercises: 0
----
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- What are some benefits and challenges with pair programming?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
+questions:
+- "What are some benefits and challenges with pair programming?"
+objectives:
 - Experience pair programming
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-
-
+keypoints:
+- "Pair programming is a skill and practice will improve your experience as a
+driver and navigator."
+---
 
 ## Setup
 * Pair up with someone
@@ -59,15 +49,5 @@ Remember to communicate! What possible approaches could you take?
 This process is about the pair programming process, not the code!  If you have
 extra time you can polish and refactor other parts of the code.
 
+{% include links.md %}
 
-
-
-
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Pair programming is a skill and practice will improve your experience as a
-driver and navigator.
-
-::::::::::::::::::::::::::::::::::::::::::::::::

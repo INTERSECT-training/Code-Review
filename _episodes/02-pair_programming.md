@@ -2,22 +2,16 @@
 title: "Pair Programming"
 teaching: 0
 exercises: 0
+questions:
+- "What are the roles in pair programming?"
+- "When is pair programming most helpful?"
+objectives:
+- "Learn about the benefites of pair programming"
+- "Learn the roles of each member and some hints for successful pairing"
+keypoints:
+- "Pairs consist of a Driver, who does the typing, and Navigator, who directs the Driver and provides assistance when needed."
+- "Pair programming is most beneficial if the task is complex or programmers are unfamiliar with the code."
 ---
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- What are the roles in pair programming?
-- When is pair programming most helpful?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
-- Learn about the benefites of pair programming
-- Learn the roles of each member and some hints for successful pairing
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 # Introduction to Pair Programming
 **Pair programming** (a.k.a. **pairing**) is an increasingly popular technique used in software development.
@@ -48,17 +42,13 @@ This is typically because:
     * Variances in understanding of a requirement will also be identified through discussing the requirement
 * “Rubber-duck debugging” is incorporated into the process
 
+> ## What is Rubber-duck debugging?
+> Originating from a story in the 1999 book, The Pragmatic Programmer, "rubber-ducking" is the act of describing code line-by-line to something, sentient or otherwise (a rubber duck in the original story), while debugging code.
+> While it may sound ridiculous, this phenomena has been found to increase the detection of bugs or unintended behavior. 
+> While pair-programming, the driver will explain the code line by line while substituting the rubber-duck for the navigator, experiencing a similar effect.
+> <img src="../images/2.duck.svg" width = "800"/>
 
-::::::::::::::::::::::::::::::::::::: callout
-
-## What is Rubber-duck debugging?
-Originating from a story in the 1999 book, The Pragmatic Programmer, "rubber-ducking" is the act of describing code line-by-line to something, sentient or otherwise (a rubber duck in the original story), while debugging code.
-While it may sound ridiculous, this phenomena has been found to increase the detection of bugs or unintended behavior. 
-While pair-programming, the driver will explain the code line by line while substituting the rubber-duck for the navigator, experiencing a similar effect.
-![](fig/2.duck.svg){alt='Duck' width='800px'}
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
+{: .callout}
 
 Assuming that pair programming is generally this effective, the time-savings in
 future debugging and maintenance costs more than compensates for the slight
@@ -118,56 +108,45 @@ Senior developers should also pair with junior developers in order to provide me
 It is important for the senior developer to be patient and work at the junior developer’s pace and to solicit feedback from the junior developer on their code.  
 Remember everybody makes mistakes!
 
-::::::::::::::::::::::::::::::::::::: callout 
+> ## Guidance for Drivers
+> * Spend time up-front discussing possible design approaches with Navigator, assuming you have not already discussed various design approaches with your team.
+> * Make sure you are "thinking out loud" while programming. 
+>     * Describe, at a reasonably coarse level of detail, how you are solving the problem you are trying to solve.
+>     * After implementing anything significant (e.g. a function, a relatively complex loop or chunk of code), ask for input!
+>         * You can ask things like “Does this look right?” or “Am I missing anything?”
+> * After writing code, always spend time brainstorming how to test it
+>     * Even if tests are not written while pairing, make notes about how to test 
+>     * Recall:  Test code should be as important as product code, and should be designed and maintained just as carefully
+> * “Give up the steering wheel” at suitable points!
+{: .callout}
 
-## Guidance for Drivers
-* Spend time up-front discussing possible design approaches with Navigator, assuming you have not already discussed various design approaches with your team.
-* Make sure you are "thinking out loud" while programming. 
-    * Describe, at a reasonably coarse level of detail, how you are solving the problem you are trying to solve.
-    * After implementing anything significant (e.g. a function, a relatively complex loop or chunk of code), ask for input!
-        * You can ask things like “Does this look right?” or “Am I missing anything?”
-* After writing code, always spend time brainstorming how to test it
-    * Even if tests are not written while pairing, make notes about how to test 
-    * Recall:  Test code should be as important as product code, and should be designed and maintained just as carefully
-* “Give up the steering wheel” at suitable points!
+> ## Guidance for Navigators
+> * If you see a possible issue, mention it!
+>   * Don’t quietly assume that the Driver is aware of an issue you might see
+>   * They may be focused on some other part of the problem
+> * Consider whether the code’s control-flow handles all possible scenarios correctly
+> * Consider whether the code fully satisfies the requirements – and also whether you and the Driver fully understand the requirements
+> * Feel free to suggest structural/style improvements, as well as possible bugs
+>   * If part of the code is complex enough to warrant a comment, point it out
+>   * Don’t be too nit-picky about unimportant personal variations in coding style
+> * If any part of the code makes assumptions about inputs or internal state:
+>   * Make sure they are documented!
+>   * Make sure they are enforced, through assertions, sanity-checks, etc.
+> * Give Drivers a chance to fix typos before immediately calling them out.  Typing with an audience can be difficult at first!
+> * <img src="../images/2.roles.svg" width = "800"/>
 
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-
-::::::::::::::::::::::::::::::::::::: callout 
-
-## Guidance for Navigators
-* If you see a possible issue, mention it!
-  * Don’t quietly assume that the Driver is aware of an issue you might see
-  * They may be focused on some other part of the problem
-* Consider whether the code’s control-flow handles all possible scenarios correctly
-* Consider whether the code fully satisfies the requirements – and also whether you and the Driver fully understand the requirements
-* Feel free to suggest structural/style improvements, as well as possible bugs
-  * If part of the code is complex enough to warrant a comment, point it out
-  * Don’t be too nit-picky about unimportant personal variations in coding style
-* If any part of the code makes assumptions about inputs or internal state:
-  * Make sure they are documented!
-  * Make sure they are enforced, through assertions, sanity-checks, etc.
-* Give Drivers a chance to fix typos before immediately calling them out.  Typing with an audience can be difficult at first!
-![](fig/2.roles.svg){alt='roles' width='800px'}
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+{: .callout}
 
 
-::::::::::::::::::::::::::::::::::::: callout 
-
-## Tools for Remote (or local) Pair Programming
-* VS Code
-  * Live Share extension from Microsoft
-* PyCharm (and other JetBrains IDEs)
-  * Code With Me plug-in
-* Generic
-  * Zoom (or equivalent) shared desktop.  Use the annotate feature to highlight areas
-* Have line numbers enabled to assist with dialog
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
+> ## Tools for Remote (or local) Pair Programming
+> * VS Code
+>   * Live Share extension from Microsoft
+> * PyCharm (and other JetBrains IDEs)
+>   * Code With Me plug-in
+> * Generic
+>   * Zoom (or equivalent) shared desktop.  Use the annotate feature to highlight areas
+> * Have line numbers enabled to assist with dialog
+{: .callout}
 
 ## Prepare for your journey
 The names Driver and Navigator invoke the image of a road trip with two people.
@@ -189,10 +168,4 @@ down because there is a police car up ahead can make everyone stressed.  As the
 Driver, you can't just ignore the Navigator and go your own way.  You need to
 work together to quickly, and safely arrive at your destination.
 
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Pairs consist of a Driver, who does the typing, and Navigator, who directs the Driver and provides assistance when needed.
-- Pair programming is most beneficial if the task is complex or programmers are unfamiliar with the code.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+{% include links.md %}

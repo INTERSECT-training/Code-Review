@@ -2,24 +2,24 @@
 title: "Introduction"
 teaching: 0
 exercises: 0
----
-
-:::::::::::::::::::::::::::::::::::::: questions 
-
+questions:
 - How can collaborative construction benefit a software project?
 - How can collaborative construction benefit developers?
 - What are some of the different types of code review?
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: objectives
-
+objectives:
 - Learn how to classify code review along different axes.
 - Remember developers are people too!
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+keypoints:
+- Reviews benefit a software project by fostering a sense of community,
+  improving overall quality, and spreading knowledge of the codebase between
+  developers.
+- Reviews benefit developers by allowing them to learn new design patterns or
+  language features, distilling knowledge throughout a team, and providing
+  some socialization between members.
+- Code reviews can range from immediate pair programming to post hoc repository
+  reviews and everywhere in between.  When developers say code review, they
+  most often mean at the level of an individual pull request.
+---
 
 # Collaborative Construction
 
@@ -33,7 +33,7 @@ pair programming.  Reviewing single PRs or commits is classified as code review.
 You can also review design documents in project planning. Checking test coverage
 may be called quality assurance and a final check of a repository prior to
 release is a repository review.
-![](fig/1.what.svg){alt='What is being reviewed' width='1000px'}
+<img src="../images/1.what.svg" width = "1000"/>
 
 ### When
 ***When*** a review takes place is tightly coupled to what is being reviewed, but not
@@ -41,7 +41,7 @@ entirely.  Consider discussing a change to the underlying data structure in a
 program.  Such a recommendation could be easily considered during design but
 may be impractical prior to release (especially if the code isn't modular).
 Keep in mind where in the project life cycle a review takes place.
-![](fig/1.when.svg){alt='When it is reviewed' width='600px'}
+<img src="../images/1.when.svg" width = "600"/>
 
 ### Why
 ***Why*** a review happens can be for a variety of reasons.  Maybe they are a rubber stamp you
@@ -156,19 +156,5 @@ While pair programming is less often utilized, it allows you to experience
 providing guidance and feedback to a fellow developer without getting caught up
 with the mechanics of performing a review.
 
+{% include links.md %}
 
-
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Reviews benefit a software project by fostering a sense of community,
-  improving overall quality, and spreading knowledge of the codebase between
-  developers.
-- Reviews benefit developers by allowing them to learn new design patterns or
-  language features, distilling knowledge throughout a team, and providing
-  some socialization between members.
-- Code reviews can range from immediate pair programming to post hoc repository
-  reviews and everywhere in between.  When developers say code review, they
-  most often mean at the level of an individual pull request.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
