@@ -10,6 +10,9 @@
     <loc>https://INTERSECT-training.github.io/Code-Review/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/best-practices.html</loc>
   </url>
   <url>
@@ -20,6 +23,9 @@
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/debrief.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/index.html</loc>
@@ -34,6 +40,9 @@
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/best-practices.html</loc>
   </url>
   <url>
@@ -46,10 +55,19 @@
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/debrief.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/pair-programming-activity.html</loc>
@@ -64,7 +82,13 @@
     <loc>https://INTERSECT-training.github.io/Code-Review/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/Code-Review/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/Code-Review/pair-programming-activity.html</loc>
