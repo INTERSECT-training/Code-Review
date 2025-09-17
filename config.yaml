@@ -18,29 +18,29 @@ carpentry: 'intersect'
 carpentry_description: 'Code Review'
 
 # Overall title for pages.
-title: 'Code Review' # FIXME
+title: 'Code Review'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ # FIXME
+created: ~ 
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'alpha' # FIXME
+life_cycle: 'beta' 
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/INTERSECT-training/Code-Review' # FIXME
+source: 'https://github.com/INTERSECT-training/Code-Review'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'icosden@princeton.edu' 
 
 # Navigation ------------------------------------------------
 #
@@ -89,3 +89,14 @@ profiles:
 # sandpaper and varnish versions) should live
 
 varnish: intersect-training/varnish
+
+analytics: |
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRMK3EP568"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-SRMK3EP568');
+  </script>
