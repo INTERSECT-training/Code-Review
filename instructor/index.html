@@ -359,7 +359,7 @@ output CMYK image. It must be invokable with this command:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">python</span> ink_limit.py input_image.tiff output_image.tiff inklimit [other options]</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="ex">python</span> ink_limit.py input_image.tiff output_image.tiff inklimit [other options]</span></code></pre>
 </div>
 <p>You can expect that the input image is a 4-channel TIFF image in the
 CMYK color space, with each channel being a value in the range 0-255.
@@ -380,7 +380,7 @@ maximum total per pixel:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">python</span> inklimit.py testimage.tiff out.tiff 240</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">python</span> inklimit.py testimage.tiff out.tiff 240</span></code></pre>
 </div>
 <p>Some notes:</p>
 <ul><li><p>If an <code>inklimit</code> value of 400 is specified, the input
@@ -400,20 +400,20 @@ type:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">pip</span> install pillow</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="ex">pip</span> install numpy</span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="ex">pip</span> install pillow</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="ex">pip</span> install numpy</span></code></pre>
 </div>
 <p>An input image can be loaded into a NumPy array with code like
 this:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="ex">from</span> PIL import Image</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="ex">import</span> numpy as np</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co"># path ends with ".tiff"</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="ex">img</span> = Image.open<span class="er">(</span><span class="ex">path,</span> <span class="st">'r'</span><span class="kw">)</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="ex">arr</span> = np.asarray<span class="er">(</span><span class="ex">img</span><span class="kw">)</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">from</span> PIL import Image</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="ex">import</span> numpy as np</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a><span class="co"># path ends with ".tiff"</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a><span class="ex">img</span> = Image.open<span class="er">(</span><span class="ex">path,</span> <span class="st">'r'</span><span class="kw">)</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1" aria-label="code-block-4-6"></a><span class="ex">arr</span> = np.asarray<span class="er">(</span><span class="ex">img</span><span class="kw">)</span></span></code></pre>
 </div>
 <p>Look at the array’s shape to understand how the width, height and
 number of channels are mapped into the array.</p>
@@ -422,9 +422,9 @@ TIFF image with code like this:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">SH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">img</span> = Image.fromarray<span class="er">(</span><span class="ex">arr,</span> mode=<span class="st">'CMYK'</span><span class="kw">)</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co"># path ends with ".tiff"</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="ex">img.save</span><span class="er">(</span><span class="ex">path,</span> compression=<span class="st">'tiff_deflate'</span><span class="kw">)</span></span></code></pre>
+<pre class="sourceCode sh" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="ex">img</span> = Image.fromarray<span class="er">(</span><span class="ex">arr,</span> mode=<span class="st">'CMYK'</span><span class="kw">)</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="co"># path ends with ".tiff"</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a><span class="ex">img.save</span><span class="er">(</span><span class="ex">path,</span> compression=<span class="st">'tiff_deflate'</span><span class="kw">)</span></span></code></pre>
 </div>
 <p>You can access Python command-line arguments very easily; you merely
 need to import <a href="https://docs.python.org/3/library/sys.html" class="external-link">the
@@ -613,7 +613,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.0" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/intersect-training/varnish/tree/e710c947c6d59097e1568794dd0a0041e5db067d" class="external-link">varnish (1.0.9)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/intersect-training/varnish/tree/e710c947c6d59097e1568794dd0a0041e5db067d" class="external-link">varnish (1.0.9)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -635,8 +635,8 @@ any links that you are not going to use.
   "url": "https://INTERSECT-training.github.io/Code-Review/instructor/index.html",
   "identifier": "https://INTERSECT-training.github.io/Code-Review/instructor/index.html",
   "dateCreated": "2025-09-17",
-  "dateModified": "2026-04-14",
-  "datePublished": "2026-04-14"
+  "dateModified": "2026-04-21",
+  "datePublished": "2026-04-21"
 }
 
   </script><script>
